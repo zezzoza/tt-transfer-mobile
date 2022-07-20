@@ -1,0 +1,12 @@
+.headerlogo {
+    position: fixed;
+    z-index: 1111;
+    left: 9px;
+    top: 4px;
+    width: 143px;
+    height: 48px;
+
+    @media all and (max-height: 375px) {
+        width: 120px;
+    }
+}
