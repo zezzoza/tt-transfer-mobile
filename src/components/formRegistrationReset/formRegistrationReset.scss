@@ -1,0 +1,33 @@
+.wrap-of-login-conteiner {
+
+    @media all and (max-height: 365px) {
+		align-items: center;
+	}
+}
+
+.entry-button {
+   margin-top: 25px;
+}
+
+.reset-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.reset-input-wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.arrowRightConteiner {
+    background-color: #8DC73F;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}

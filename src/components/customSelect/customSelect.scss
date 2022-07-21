@@ -1,39 +1,3 @@
-.register-wrap {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-
-	.header-line {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 56px;
-		color: #FFF;
-	}
-}
-
-.register-fields-wrap {
-	margin: 0 20px;
-	max-width: 400px;
-	overflow: hidden;
-
-	.register-fields-title {
-		margin-top: 100px;
-		margin-bottom: 10px;
-		font-size: 28px;
-		font-weight: 400;
-	}
-
-	.register-fields-description {
-		font-size: 14px;
-		line-height: 25px;
-		margin-bottom: 10px;
-	}
-}
-
 .select-item {
 	height: 40px;
 	display: flex;

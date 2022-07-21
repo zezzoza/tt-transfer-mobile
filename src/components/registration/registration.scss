@@ -1,13 +1,85 @@
+.register-wrap {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+
+	@media all and (max-height: 830px) {
+		align-items: start;
+	}
+
+	.header-line {
+		position: fixed;
+		z-index: 1110;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 56px;
+		background-color: #FFF;
+	}
+
+	.register-fields-wrap {
+		margin: 0 20px;
+		max-width: 400px;
+		overflow: hidden;
+
+		@media all and (min-width: 768px) {
+			max-width: 500px;
+		}
+	
+		.register-fields-title {
+			margin-top: 65px;
+			margin-bottom: 10px;
+			font-size: 28px;
+			font-weight: 400;
+		}
+	
+		.register-fields-description {
+			font-size: 16px;
+			line-height: 25px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.reg-form {
+		.input-wrapper {
+			margin-bottom: 15px;
+		}
+
+		.margin-top-15 {
+			margin-top: 15px;
+		}
+	}
+
+
+	.accept {
+		margin-top: 10px;
+		margin-bottom: 15px;
+
+		font-size: 12px;
+
+		@media all and (min-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}
+
+.login-button {
+	display: flex;
+	justify-content: center;
+}
+
 .role-class-select {
 	margin-top: 10px;
-	width: 500px;
+	width: 100%;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
-	padding: 0 18px 0 24px;
+	padding: 3px 18px 0 24px;
 	background: #E8E8E8;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 16px;
 }

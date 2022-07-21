@@ -3,7 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
+
+    @media all and (max-height: 365px) {
+		align-items: start;
+	}
 
     .login-fields {
         max-width: 400px;
@@ -12,6 +16,9 @@
 
         @media all and (max-width: 740px) and (max-height: 500px) {
             max-width: 350px;
+        }
+        @media all and (min-width: 768px) {
+            max-width: 500px;
         }
     }
 
@@ -24,7 +31,7 @@
 
     .login-sub-tittle {
         line-height: 1.5;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         margin-bottom: 3px;
     }
@@ -69,18 +76,18 @@
 
 .input {
     font-weight: 400;
-    height: 45px;
+    height: 50px;
     width: 100%;
     background-color: #E8E8E8;
     border: none;
     outline: none;
     padding: 0px 23px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
 
-    @media all and (min-width: 768px) and (max-width: 1023px) {
-            height: 50px;
+    &[type="text"] {
+        font-size: 16px;
     }
 }
 
@@ -89,6 +96,7 @@
 }
 
 .submit-button {
+    padding-top: 2px;
     background-color: #8DC73F;
     border: none;
     outline: none;
@@ -101,7 +109,6 @@
     width: 220px;
     display: block;
     height: 40px;
-    margin-top: 33px;
 
     @media all and (max-height: 410px) {
         margin-top: 0;

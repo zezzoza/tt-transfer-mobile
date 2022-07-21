@@ -15,10 +15,10 @@ const FormRegistration = () => {
 
         <form action="">
           <div className="input-wrapper">
-            <input type="text" class="input" placeholder="E mail" name="email" />
+            <input type="text" className="input" placeholder="E mail" name="email" />
           </div>
           <div className="input-wrapper">
-            <input type="password" class="input" placeholder="Пароль" name="password" />
+            <input type="password" className="input" placeholder="Пароль" name="password" />
           </div>
           <div className="login-button">
             <input type="submit" class="submit-button" value="Войти" />
@@ -28,7 +28,7 @@ const FormRegistration = () => {
           </div>
         </form>
 
-        <div class="save-auth">
+        <div className="save-auth">
           <input type="checkbox" />
           <label>Запомнить меня?</label>
         </div>

@@ -9,4 +9,7 @@
     @media all and (max-height: 375px) {
         width: 120px;
     }
+    @media all and (min-width: 768px) and (min-height: 540px) {
+        width: 194px;
+    }
 }
