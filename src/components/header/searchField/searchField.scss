@@ -1,0 +1,96 @@
+.search-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  height: 55px;
+  width: 100%;
+  padding-left: 61px;
+  padding-right: 52px;
+  box-sizing: border-box;
+
+  .iconLogo-wrapper { // TT Transfer
+    display: flex;     
+    height: 48px;
+
+    .iconLogo-TT-conteiner {
+      position: relative;
+      width: 31px;
+      height: 100%;
+
+      .iconLogo-T-white {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 21px;
+        height: 38px;
+      }
+
+      .iconLogo-T-green {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 21px;
+        height: 38px;
+      }
+    }
+
+    .iconLogo-Transfer-conteiner {
+      width: 106px;
+      height: 48px;
+      position: relative;
+
+      @media all and (max-width: 300px) {
+        display: none;
+      }
+
+      .iconLogo-Transfer {
+        position: absolute;
+        bottom: 11px;
+        left: 6px;
+
+      }
+    }
+  }
+
+  .search-input-conteiner { // input
+    height: 55px;
+    max-width: 239px;
+    margin-left: 9px;
+    box-sizing: border-box;
+
+    .search-input {
+      background: rgba(149, 159, 173, 0.3);
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      padding: 21px 42px 20px 15px;
+      box-sizing: border-box;
+
+      &[type='text'] {
+        color: #fff;
+      }
+    }
+  }
+
+  .search-icon-conteiner {
+    position: absolute;
+    top: 16px;
+    right: 60px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    .search-icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

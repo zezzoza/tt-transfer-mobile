@@ -2,14 +2,12 @@ import "./burger.scss"
 import logo from "../../../assets/ЛогоБургер.svg"
 import burger from "../../../assets/Бургер.svg"
 import iconNews from "../../../assets/icons8-rss-news.svg"
-import iconOrders from "../../../assets/icons8-rss-orders.svg"
+import iconOrders from "../../../assets/icons8-rss-orders-green.svg"
+import iconWheel from "../../../assets/icons8-руль.svg"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 
 const Burger = () => {
-
-  const [isVisible, setVisible] = useState(false)
-  const handleVisibility = () => setVisible(!isVisible)
 
   const [isVisibleBurger, setVisibleBurger] = useState(false)
   const handleVisibilityBurger = () => setVisibleBurger(!isVisibleBurger)
@@ -37,8 +35,7 @@ const Burger = () => {
                   <div className="burger-point">Лента активности</div>
                 </div>
 
-                <div className="burger-item-conteiner active-burger-item-list"
-                  onClick={handleVisibility}>
+                <div className="burger-item-conteiner active-burger-item-list"s>
                   {/* active-burger-item-list это активная менюшка у бургера */}
                   <div className="burger-icon-conteiner">
                     <img src={iconOrders} className="burger-icon-point" alt="" srcset="" />
@@ -49,7 +46,7 @@ const Burger = () => {
 
                 <div className="burger-item-conteiner">
                   <div className="burger-icon-conteiner">
-                    <img src={iconNews} className="burger-icon-point" alt="" srcset="" />
+                    <img src={iconWheel} className="burger-icon-point" alt="" srcset="" />
                   </div>
 
                   <div className="burger-point">Список заказов</div>

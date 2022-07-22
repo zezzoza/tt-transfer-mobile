@@ -1,0 +1,21 @@
+.icon-profile-wrapper {
+  position: fixed;
+  right: 6px;
+  top: 8px;
+
+  .icon-profile-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #8DC73F;
+    border-radius: 100%;
+
+    .icon-profile-T {
+      margin-top: 1px;
+      width: 18px;
+      height: 30px;
+    }
+  }
+}
