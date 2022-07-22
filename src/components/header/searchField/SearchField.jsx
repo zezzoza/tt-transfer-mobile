@@ -6,10 +6,11 @@ import iconTransfer from "../../../assets/Трансфер.svg"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 
+
 const SearchField = () => {
 
-  const [isVisibleSearch, setVisibleSearch] = useState(false)
-  const handleVisibilitySearch = () => setVisibleSearch(!isVisibleSearch)
+  const [isVisible, setVisible] = useState(false)
+  const handleVisibility = () => setVisible(!isVisible)
 
   return (
     <div className="search-wrapper">
@@ -18,11 +19,11 @@ const SearchField = () => {
           <img src={iconTWhite} className="iconLogo-T-white" alt="" srcset="" />
           <img src={iconTGreen} className="iconLogo-T-green" alt="" srcset="" />
         </div>
-        
+
         <AnimatePresence>
           {
             // document.documentElement.clientWidth
-            !isVisibleSearch && (
+            !isVisible && (
               <motion.div
                 transition={{ duration: 0.2 }}
               >
@@ -37,12 +38,12 @@ const SearchField = () => {
 
       <AnimatePresence>
         {
-          isVisibleSearch && (
+          isVisible && (
             <motion.div
               transition={{ duration: 0.2 }}
             >
               <div className="search-input-conteiner">
-                <input className="search-input" type="text" />
+                <input className="search-input" type="text" placeholder="Глобальный поиск"/>
               </div>
             </motion.div>
           )
@@ -50,7 +51,7 @@ const SearchField = () => {
       </AnimatePresence>
 
       <div className="search-icon-conteiner"
-        onClick={handleVisibilitySearch}>
+        onClick={handleVisibility}>
         <img className="search-icon" src={searchIcon} alt="" />
       </div>
     </div>

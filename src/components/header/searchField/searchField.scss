@@ -73,6 +73,10 @@
       &[type='text'] {
         color: #fff;
       }
+
+      &::placeholder {
+        color: #959FAD;
+      }
     }
   }
 
