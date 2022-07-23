@@ -11,7 +11,6 @@ const Header = () => {
         <SearchField />
         <IconProfile />
       </div>
-      <div className="header-wrapper"></div>
     </>
   )
 }
