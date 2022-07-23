@@ -1,8 +1,8 @@
-import "./footer.scss"
+import "./footerAction.scss"
 
-const Footer = () => {
+const FooterAction = () => {
   return (
-    <div className="footer-wrapper">
+    <div className="footer">
       <div className="footer-highlight">Выделить</div>
       <div className="footer-delete">Удалить</div>
       <div className="footer-select-all">Выбрать всё</div>
@@ -11,4 +11,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default FooterAction

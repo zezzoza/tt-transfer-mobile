@@ -1,6 +1,4 @@
-.footer-wrapper {
-  flex: 0 0 auto;
-  width: 100%;
+.footer {
   height: 35px;
   display: flex;
   align-items: center;
@@ -12,7 +10,8 @@
   line-height: 14px;
   color: #000;
 
-  div {
+  .footer-highlight, .footer-delete,
+  .footer-select-all, .footer-to-archive {
     margin: 0 1px;
     padding: 0 7px;
   }
