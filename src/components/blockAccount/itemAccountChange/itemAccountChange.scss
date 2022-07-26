@@ -1,0 +1,20 @@
+.item-account-wrapper {
+
+
+  .item-account-field {
+    position: relative;
+
+    .show-password {
+      position: absolute;
+      right: 14px;
+      bottom: 15px;
+
+      text-decoration-line: underline;
+      color: #737373;
+    }
+
+    .padding-right {
+      padding-right: 74px;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.orders-account-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  .back-orders {
+    padding: 16px 0;
+  
+    img {
+      width: 25px;
+      margin-right: 10px;
+      margin-left: 13.5px;
+    }
+  
+    a {
+      font-weight: 400;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 14px;
+      color: #737373;
+    }
+  }
+
+  .profile-tabs {
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #737373;
+
+    @media all and (max-width: 420px) {
+      max-width: 420px;
+    }
+
+    .profile-link-item {
+      display: flex;
+      align-items: center;
+      height: 49px;
+      position: relative;
+  
+      &.active-1 {
+        background: rgba(149, 159, 173, 0.3);
+        color: #337AB7;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 100%;
+          width: 3px;
+          position: absolute;
+          left: 0;
+          top: 0;
+
+          background-color: #337AB7;
+        }
+      }
+
+      .icon {
+        margin-left: 27px;
+        margin-right: 10px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .profile-data {
+      margin-top: 29px;
+      margin-bottom: 29px;
+    }
+  }
+}

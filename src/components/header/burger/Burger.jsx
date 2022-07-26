@@ -6,6 +6,7 @@ import iconOrders from "../../../assets/icons8-rss-orders-green.svg"
 import iconWheel from "../../../assets/icons8-руль.svg"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Burger = () => {
 
@@ -27,30 +28,36 @@ const Burger = () => {
               <div className="burger-list">
                 <img src={logo} alt="" srcset="" className="burger-logo" />
 
-                <div className="burger-item-conteiner">
-                  <div className="burger-icon-conteiner">
-                    <img src={iconNews} className="burger-icon-point" alt="" srcset="" />
+                <Link to="/activity-feed">
+                  <div className="burger-item-conteiner">
+                    <div className="burger-icon-conteiner">
+                      <img src={iconNews} className="burger-icon-point" alt="" srcset="" />
+                    </div>
+
+                    <div className="burger-point">Лента активности</div>
                   </div>
+                </Link>
 
-                  <div className="burger-point">Лента активности</div>
-                </div>
+                <Link to="/orders">
+                  <div className="burger-item-conteiner active-burger-item-list">
+                    {/* active-burger-item-list это активная менюшка у бургера */}
+                    <div className="burger-icon-conteiner">
+                      <img src={iconOrders} className="burger-icon-point" alt="" srcset="" />
+                    </div>
 
-                <div className="burger-item-conteiner active-burger-item-list"s>
-                  {/* active-burger-item-list это активная менюшка у бургера */}
-                  <div className="burger-icon-conteiner">
-                    <img src={iconOrders} className="burger-icon-point" alt="" srcset="" />
+                    <div className="burger-point">Заказать</div>
                   </div>
+                </Link>
 
-                  <div className="burger-point">Заказать</div>
-                </div>
+                <Link to="/history">
+                  <div className="burger-item-conteiner">
+                    <div className="burger-icon-conteiner">
+                      <img src={iconWheel} className="burger-icon-point" alt="" srcset="" />
+                    </div>
 
-                <div className="burger-item-conteiner">
-                  <div className="burger-icon-conteiner">
-                    <img src={iconWheel} className="burger-icon-point" alt="" srcset="" />
+                    <div className="burger-point">Список заказов</div>
                   </div>
-
-                  <div className="burger-point">Список заказов</div>
-                </div>
+                </Link>
 
                 <div className="CRMsystem">
                   @ CRM система TT-transfer

@@ -1,0 +1,106 @@
+.orders-points-conteiner { // таблица заказов
+  border-collapse: collapse;
+  margin: 0 6px;
+
+  .orders-points {
+    height: 35px;
+    
+
+    background: #E8E8E8;
+    border-radius: 3px;
+
+    td {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #000000;
+    }
+
+    .orders-column-1 {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      padding-left: 22px;
+    }
+
+    .orders-column-4 {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding-right: 22px;
+    }
+  }
+}
+
+.orders-column-1 {
+  width: 29%;
+}
+.orders-column-2 {
+  width: 17%;
+}  
+.orders-column-3 {
+  width: 17%;
+} 
+.orders-column-4 {
+  width: 37%;
+}
+  
+.orders-grid-fields { // main-table
+  margin: 0 6px 0 6px;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .orders-infofields-conteiner {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 4px;
+  
+    .orders-infofields {
+      height: 60px;
+  
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+  
+      &.complete {
+        background: #8DC73F;
+      }
+        
+      td {
+        padding-right: 3px;
+      }
+  
+      .orders-column-1 {
+        padding-left: 22px;
+
+        color: #337AB7;
+      }
+      .orders-column-3 {
+        .time {
+          &.red {
+            color: #CF1616;
+          }
+        }
+      }
+      .orders-column-4 {
+        padding-right: 22px;
+      }
+
+      .from-to {
+
+        img {
+          margin-top: 1px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.line-between-tr {
+  margin: 0  auto;
+  width: 98%;
+  height: 1px;
+  background-color: #E8E8E8;
+}
